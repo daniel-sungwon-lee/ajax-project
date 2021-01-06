@@ -394,14 +394,32 @@ function renderLi (text,author){
   $pAuthor.textContent=author
   $pDiv.appendChild($pAuthor)
 
+  const $iconsDiv=document.createElement("div")
+  $iconsDiv.setAttribute("class","icons-div")
+  $li.appendChild($iconsDiv)
+
+  const $sortDiv = document.createElement("div")
+  $sortDiv.setAttribute("class", "sort-div")
+  $iconsDiv.appendChild($sortDiv)
+
   const $delDiv = document.createElement("div")
   $delDiv.setAttribute("class", "del-div")
-  $li.appendChild($delDiv)
+  $iconsDiv.appendChild($delDiv)
 
   const $delete=document.createElement("i")
   $delete.setAttribute("class","fas fa-trash")
   $delete.setAttribute("id","delete")
   $delDiv.appendChild($delete)
+
+  const $sortUp = document.createElement("i")
+  $sortUp.setAttribute("class", "fas fa-caret-up")
+  $sortUp.setAttribute("id", "sort-up")
+  $sortDiv.appendChild($sortUp)
+
+  const $sortDown = document.createElement("i")
+  $sortDown.setAttribute("class", "fas fa-caret-down")
+  $sortDown.setAttribute("id", "sort-down")
+  $sortDiv.appendChild($sortDown)
 
   return $li
 }
@@ -427,14 +445,32 @@ function renderCheckLi (text){
   $label.textContent=text
   $divLi.appendChild($label)
 
+  const $iconsDiv = document.createElement("div")
+  $iconsDiv.setAttribute("class", "icons-div")
+  $li.appendChild($iconsDiv)
+
+  const $sortDiv = document.createElement("div")
+  $sortDiv.setAttribute("class", "sort-div")
+  $iconsDiv.appendChild($sortDiv)
+
   const $delDiv=document.createElement("div")
   $delDiv.setAttribute("class","del-div")
-  $li.appendChild($delDiv)
+  $iconsDiv.appendChild($delDiv)
 
   const $delete=document.createElement("i")
   $delete.setAttribute("class","fas fa-trash")
   $delete.setAttribute("id","delete")
   $delDiv.appendChild($delete)
+
+  const $sortUp = document.createElement("i")
+  $sortUp.setAttribute("class", "fas fa-caret-up")
+  $sortUp.setAttribute("id", "sort-up")
+  $sortDiv.appendChild($sortUp)
+
+  const $sortDown = document.createElement("i")
+  $sortDown.setAttribute("class", "fas fa-caret-down")
+  $sortDown.setAttribute("id", "sort-down")
+  $sortDiv.appendChild($sortDown)
 
   return $li
 }
@@ -456,14 +492,32 @@ function renderRecipeLi (text,url){
   $pText.textContent = text
   $link.appendChild($pText)
 
+  const $iconsDiv = document.createElement("div")
+  $iconsDiv.setAttribute("class", "icons-div")
+  $li.appendChild($iconsDiv)
+
+  const $sortDiv = document.createElement("div")
+  $sortDiv.setAttribute("class", "sort-div")
+  $iconsDiv.appendChild($sortDiv)
+
   const $delDiv = document.createElement("div")
   $delDiv.setAttribute("class", "del-div")
-  $li.appendChild($delDiv)
+  $iconsDiv.appendChild($delDiv)
 
   const $delete = document.createElement("i")
   $delete.setAttribute("class", "fas fa-trash")
   $delete.setAttribute("id", "delete")
   $delDiv.appendChild($delete)
+
+  const $sortUp = document.createElement("i")
+  $sortUp.setAttribute("class", "fas fa-caret-up")
+  $sortUp.setAttribute("id", "sort-up")
+  $sortDiv.appendChild($sortUp)
+
+  const $sortDown = document.createElement("i")
+  $sortDown.setAttribute("class", "fas fa-caret-down")
+  $sortDown.setAttribute("id", "sort-down")
+  $sortDiv.appendChild($sortDown)
 
   return $li
 }

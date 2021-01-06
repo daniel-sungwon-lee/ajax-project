@@ -144,6 +144,22 @@ ul{
 .fas.fa-redo:hover{
   color: #30B08E;
 }
+.fas.fa-caret-up,.fas.fa-caret-down{
+  font-size: 34px;
+  margin: -3px 0;
+}
+.fas.fa-caret-up:hover{
+  color: #30B08E;
+}
+.fas.fas.fa-caret-up:active{
+  color: #30B08E;
+}
+.fas.fa-caret-down:hover{
+  color: #ef233c;
+}
+.fas.fas.fa-caret-down:active{
+  color: #ef233c;
+}
 
 .spinner {
   height: 10rem;
