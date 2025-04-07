@@ -23,7 +23,7 @@ function getAdvice(){
 
 function getFamousQuote(){
   const xhr = new XMLHttpRequest()
-  xhr.open("GET","https://quote-garden.onrender.com/api/v3/quotes/random")
+  xhr.open("GET","https://api.forismatic.com/api/1.0/?method=getQuote&format=xml&lang=en")
   xhr.onerror = () => alert("A network error has occured; please check your connection")
   xhr.addEventListener("load",()=>{
     const data = JSON.parse(xhr.response)
